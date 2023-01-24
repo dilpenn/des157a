@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <header>
+        <h1>Experiment 1</h1>
+    </header>
+    <h2>Open the console to test the experiment.</h2>
+    
+    <script>
+        //capitalizes every other letter of inputted text
+        var input = prompt("Please input a word", "").toLowerCase();
+
+        for (var i=0; i<input.length; i++) {
+            if ((i+1)%2 == 0) {
+                console.log(input[i].toUpperCase());
+            } else {
+                console.log(input[i]);
+            }
+        }
+    </script>
+</body>
+</html>
