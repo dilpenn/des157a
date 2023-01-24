@@ -1,31 +1,95 @@
 body {
-    background: linear-gradient(180deg, #30A6E9 -2%, #99D3EC 97.8%); 
+    background: linear-gradient(180deg, #0A5B88, #30A6E9, #99D3EC); 
     color: white;
     padding: 2% 15%;
+    background-size: 400% 400%;
+    animation: gradientchange 30s ease infinite;
+}
+
+@keyframes gradientchange {
+    0% {
+		background-position: 200% 0%;
+	}
+	50% {
+		background-position: 200% 100%;
+	}
+	100% {
+		background-position: 200% 0%;
+	}
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+}
+
+#banner:hover {
+    animation: bounce 5s ease infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-15px) translateY(-10px);
+    }
+    50% {
+        transform: translateX(-30px) translateY(-5px);
+    }
+    75% {
+        transform: translateX(-20px) translateY(-10px);
+    }
 }
 
 h1 {
     font-weight: 600;
     font-size: 64px;
     text-transform: uppercase;
+    margin: 20px 0 0 0;
 }
 h2 {
     font-weight: 500;
     font-size: 24px;
+    margin: 30px 0 0 25px;
 }
 
 h1, h2, footer {
     font-family: 'Gluten', cursive;
 }
 
+#subheader {
+    margin: 0 0 20px 0;
+}
+
 #subheader, li {
     font-family: 'Maven Pro', sans-serif;
 }
 
+ul {
+    margin-top: 0;
+    margin-left: 15px;
+}
+
 li {
-    list-style-type: none; 
+    list-style-image: url(images/cloud_bullet.png); 
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:#F0768C;
+}
+  
+a:active {
+    color:#0A5B88;
+    font-weight: 500;
 }
 
 .column {
@@ -42,4 +106,5 @@ main {
 footer {
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
 }
