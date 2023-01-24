@@ -25,6 +25,7 @@ body {
 
 #banner:hover {
     animation: bounce 5s ease infinite;
+    cursor: crosshair;
 }
 
 @keyframes bounce {
