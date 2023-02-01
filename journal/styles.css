@@ -1,0 +1,53 @@
+html {
+    background: linear-gradient(114.68deg, #FFFFFF 21.44%, #EFEFEF 98.23%);
+    color: #2E2E2E;
+}
+
+body {
+   font-family: 'Dekko', cursive; 
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+date, p {
+    font-size: 22px;
+}
+
+.container {
+    position: relative;
+    /* text-align: center; */
+    width: 716px;
+    margin: auto;
+}
+
+.page_title {
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: 96px;
+}
+
+date {
+    position: absolute;
+    top: 112px;
+    left: 96px;
+}
+.paragraphs {
+    width: 610px;
+    text-indent: 36px;
+    position: absolute;
+    top: 180px;
+    left: 45px;
+}
+
+.paragraphs p {
+    line-height: 170%;
+    margin: 0;
+}
