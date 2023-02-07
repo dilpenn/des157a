@@ -8,17 +8,44 @@
 </head>
 <body>
     <h1>A Cat's Dream</h1>
-    <img src="images/cat_sleep.png" width = 630px>
-    
-    <form>
-        <label for="food">Food:</label>
-        <input type="text" id="food">
+    <main>
+        <img src="images/cat_sleep.png" width = 630px>
+        
+        <form>
+            <label for="food">Food:</label>
+            <input type="text" id="food">
 
-        <label for="plNoun">Plural Noun:</label>
-        <input type="text" id="plNoun">
+            <label for="plNoun">Plural Noun:</label>
+            <input type="text" id="plNoun">
 
-        <label for="verbObj">Verb done on object:</label>
-        <input type="text" id="verbObj">
-    </form>
+            <label for="verbObj">Verb done on object:</label>
+            <input type="text" id="verbObj">
+
+            <label for="plNoun2">Another Plural Noun:</label>
+            <input type="text" id="plNoun2">
+
+            <label for="verbIng">Verb ending in -ing:</label>
+            <input type="text" id="verbIng">
+            
+            <label for="adj">Adjective:</label>
+            <input type="text" id="adj">
+
+            <label for="noun">Noun:</label>
+            <input type="text" id="noun">
+
+            <label for="activity">Activity:</label>
+            <select id="activity">
+                <option value="" selected>-</option> <!-- selected to make default option -->
+                <option value="partying">partying</option>
+                <option value="modeling">modeling</option>
+                <option value="exercising">exercising</option>
+            </select>
+            <input type="submit" id="send-form" value="Create Dream">
+        </form>
+
+        <div id="output">
+            <p>Today is a great day! I started by having ____ for breakfast. Later, I rolled around in some dirty ____. Although I wanted to ___ my human, I couldn't find them anywhere around the house. This means I can do anything I want! I had been eyeing the ____ in the living room, but wasn't allowed to touch the,. After ____ them, I played with my favorite ___ ____. I finished the day off by ___ with my friends.</p>
+        </div>
+    </main>
 </body>
 </html>
