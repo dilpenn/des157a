@@ -1,0 +1,88 @@
+html {
+    /* background-image: url("images/background.png");
+    width: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat; */
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+
+}
+
+main {
+    display: flex;
+    gap: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 25px;
+}
+
+#img_sleep {
+    width: 630px;
+    height: 413px;
+    margin-top: 150px;
+}
+
+
+#zzz {
+    position: relative;
+}
+
+#z2 {
+    animation: pulse 1.5s infinite ease-in-out;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+#z3 {
+    animation: pulse 1.5s infinite ease-in-out;
+    animation-delay: 0.25s;
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#input {
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+}
+
+#output {
+    display: none;
+}
+
+#input, #output {
+    background: #F2D9F8;
+    border: 5px solid #9861A6;
+    border-radius: 32px;
+    padding: 40px;
+}
+
+#input label {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+

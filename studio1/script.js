@@ -46,7 +46,7 @@
             myText = "Please choose an activity";
             document.querySelector('#activity').focus();
         } else {
-            myText = `You typed the words ${food} ${plNoun} ${verbObj} ${plNoun2} ${verbIng} ${adj} ${noun} ${activity}`;
+            myText = `Today is a great day! I started by having ${food} for breakfast. Later, I rolled around in some dirty ${plNoun}. Although I wanted to ${verbObj} my human, I couldn't find them anywhere around the house. This means I can do anything I want! I had been eyeing the ${plNoun2} in the living room, but wasn't allowed to touch them. After ${verbIng} them, I played with my favorite ${adj} ${noun}. I finished the day off by ${activity} with my friends.`;
         }
 
         madLib.innerHTML = myText;

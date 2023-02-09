@@ -6,16 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- normalize -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- Google Fonts: Baloo 2 in 400, 500, 600, 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- stylesheet -->
     <link href="styles.css" rel="stylesheet">
     <!-- JavaScript -->
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
     <title>A Cat's Dream</title>
 </head>
+
 <body>
-    <h1>A Cat's Dream</h1>
+    
+    <div id="background"></div>
+    <div id="floor"></div>
+
+    <header>
+        <h1>A Cat's Dream</h1>
+    </header>
+    
     <main>
-        <img src="images/cat_sleep.png" width = 630px>
+        <section>
+            <section id="zzz">
+                <img id="z1" src="images/Z.png">
+                <img id="z2" src="images/Z.png">
+                <img id="z3" src="images/Z.png">
+            </section>
+            
+            <img id="img_sleep" src="images/cat_sleep.png" width = 630px>
+        </section>
         
         <form id="input">
             <label for="food">Food:</label>
