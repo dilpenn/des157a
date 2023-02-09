@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <!-- <script src="script.js" defer></script> -->
     <title>A Cat's Dream</title>
 </head>
 <body>
@@ -11,7 +17,7 @@
     <main>
         <img src="images/cat_sleep.png" width = 630px>
         
-        <form>
+        <form id="input">
             <label for="food">Food:</label>
             <input type="text" id="food">
 
@@ -43,9 +49,8 @@
             <input type="submit" id="send-form" value="Create Dream">
         </form>
 
-        <div id="output">
-            <p>Today is a great day! I started by having ____ for breakfast. Later, I rolled around in some dirty ____. Although I wanted to ___ my human, I couldn't find them anywhere around the house. This means I can do anything I want! I had been eyeing the ____ in the living room, but wasn't allowed to touch the,. After ____ them, I played with my favorite ___ ____. I finished the day off by ___ with my friends.</p>
-        </div>
+        <article id="output">
+        </article>
     </main>
 </body>
 </html>
