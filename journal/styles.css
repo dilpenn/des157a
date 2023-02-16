@@ -51,3 +51,21 @@ date {
     line-height: 170%;
     margin: 0;
 }
+
+figure {
+    margin: 0;
+    text-indent: 0;
+    position: absolute;
+    border: 5px solid #FFFDF8;
+    box-shadow: 2px 2px 8px #6e6e6e;
+}
+
+.first-fig {
+    top: 180px;
+    left: -325px;
+}
+
+.second-fig {
+    top: 555px;
+    left: 735px;
+}
