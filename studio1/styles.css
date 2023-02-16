@@ -1,18 +1,16 @@
 html {
-    /* background-image: url("images/background.png");
+    background-image: url("images/background.png");
     width: 100%;
     background-size: cover; 
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 body {
     font-family: 'Baloo 2', cursive;
-
 }
 
 main {
-    display: flex;
-    gap: 100px;
+    position: relative;
 }
 
 h1 {
@@ -20,12 +18,14 @@ h1 {
     font-weight: 700;
     font-size: 80px;
     margin: 25px;
+    color: #281a81;
+    text-shadow: 2px 2px 8px #0000009c;
 }
 
 #img_sleep {
-    width: 630px;
-    height: 413px;
-    margin-top: 150px;
+    position: absolute;
+    width: 50%;
+    top: 190px;
 }
 
 
@@ -62,27 +62,111 @@ h1 {
     }
 }
 
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
 
 #input {
-    display: flex;
-    flex-direction: column;
-    line-height: 2em;
+    
 }
 
 #output {
-    display: none;
+    line-height: 1.85em;
 }
 
 #input, #output {
     background: #F2D9F8;
     border: 5px solid #9861A6;
     border-radius: 32px;
-    padding: 40px;
+    margin-left: 20px;
+    padding: 20px 30px;
+    width: 410px;
+    font-size: 22px;
+    position: absolute;
+    right: 4%;
+    top: -5px;
+    box-shadow: 2px 2px 8px #0000009c;
 }
 
-#input label {
+
+/* FORM STYLING */
+form div {
+    margin-bottom: 20px;
+}
+
+label {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
+    display: inline-block;
+    width: 215px;
+}
+
+input, select {
+    width: 150px;
+    font-size: 20px;
+    padding: 8px 16px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #281a81a0;
+    background-color: #ffffff8c;
+    transition: 0.5s;
+}
+
+input[type=text]:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #281a81a0;
+}
+
+select {
+    background-color: #ffffff8c;
+    transition: 0.5s;
+    border: 2px solid #281a81a0;
+}
+
+select:focus {
+    background-color: #FFFFFF;
+}
+
+input[type=button], input[type=submit] {
+    background-color: #281a81;
+    color: #FFFFFF;
+    border: 2px solid #281a81a0;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+
+#images {
+    position: relative;
+}
+
+#zzz_container {
+    position: absolute;
+    bottom: -250px;
+    left: 350px;
+}
+
+#bubble_container {
+    position: absolute;
+    bottom: -250px;
+    left: 320px;
+}
+
+#cat_activities {
+    position: absolute;
 }
 
 

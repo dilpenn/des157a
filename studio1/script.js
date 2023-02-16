@@ -10,14 +10,14 @@
         event.preventDefault();
 
         //grab value of each input
-        const food = document.querySelector('#food').value;
-        const plNoun = document.querySelector('#plNoun').value;
-        const verbObj = document.querySelector('#verbObj').value;
-        const plNoun2 = document.querySelector('#plNoun2').value;
-        const verbIng = document.querySelector('#verbIng').value;
-        const adj = document.querySelector('#adj').value;
-        const noun = document.querySelector('#noun').value;
-        const activity = document.querySelector('#activity').value;
+        const food = document.querySelector('#food').value.bold();
+        const plNoun = document.querySelector('#plNoun').value.bold();
+        const verbObj = document.querySelector('#verbObj').value.bold();
+        const plNoun2 = document.querySelector('#plNoun2').value.bold();
+        const verbIng = document.querySelector('#verbIng').value.bold();
+        const adj = document.querySelector('#adj').value.bold();
+        const noun = document.querySelector('#noun').value.bold();
+        const activity = document.querySelector('#activity').value.bold();
 
         //error messages
         let myText;
@@ -46,12 +46,25 @@
             myText = "Please choose an activity";
             document.querySelector('#activity').focus();
         } else {
+            if (activity == "partying") {
+                document.getElementById('partying').className = 'showing'; //partying img appears
+            } else if (activity == "modeling") {
+                document.getElementById('modeling').className = 'showing'; //modeling img appears
+            } else if (activity == "exercising") {
+                document.getElementById('exercising').className = 'showing'; //exercising img appears
+            }
             myText = `Today is a great day! I started by having ${food} for breakfast. Later, I rolled around in some dirty ${plNoun}. Although I wanted to ${verbObj} my human, I couldn't find them anywhere around the house. This means I can do anything I want! I had been eyeing the ${plNoun2} in the living room, but wasn't allowed to touch them. After ${verbIng} them, I played with my favorite ${adj} ${noun}. I finished the day off by ${activity} with my friends.`;
         }
 
+        
+
         madLib.innerHTML = myText;
 
-        // Today is a great day! I started by having ____ for breakfast. Later, I rolled around in some dirty ____. Although I wanted to ___ my human, I couldn't find them anywhere around the house. This means I can do anything I want! I had been eyeing the ____ in the living room, but wasn't allowed to touch the,. After ____ them, I played with my favorite ___ ____. I finished the day off by ___ with my friends.
+        document.getElementById('input').className = 'hidden'; //input disappears
+        document.getElementById('output').className = 'showing'; //output appears
+
+        document.getElementById('zzz').className = 'hidden'; //zzz disappears
+        document.getElementById('bubble').className = 'showing'; //dream bubble appears
         
 
     })
