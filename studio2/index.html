@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- Google Fonts: Carter One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+    <title>Roadtrip through the Pacific NW</title>
+</head>
+<body>
+        <header>
+            <h1>Roadtrip thru the Pacific NW</h1>
+            <p>Click on different landmarks to travel!</p>
+        </header>
+        
+        <!-- map, landmarks, and car -->
+        <div class="map_layout">
+            <img src="images/map.png" alt="west coast map" id="map">
+            <div class="open">
+                <img src="images/city.png" alt="a couple buildings" id="city">
+                <img src="images/sand.png" alt="sand dune" id="sand">
+                <img src="images/elk.png" alt="an elk" id="elk">    
+            </div>
+            <img src="images/home.png" alt="house" id="home">
+            <img src="images/car.svg" id="car">
+        </div>
+
+        <!-- overlay -->
+        <section id="overlay" class="hidden">
+            <button class="close">x</button>
+            <div id="images">
+                <img src="images/city_img.jpg" alt="Seattle buildings" id="city_img" class="hidden">
+                <img src="images/sand_img.jpg" alt="dunes of Oregon" id="sand_img" class="hidden">
+                <img src="images/elk_img.jpg" alt="elk in Northern California" id="elk_img" class="hidden">
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+</body>
+</html>

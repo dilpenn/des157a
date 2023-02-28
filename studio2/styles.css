@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    background-color: #90C9F2;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Carter One', cursive;
+    font-size: 48px;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    color: #950f0f;
+}
+
+header p {
+    font-family: 'Tahoma';
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(36, 36, 36);
+}
+
+.map_layout{
+    position: relative;
+    left: 200px;
+}
+
+/* #map {
+    height: 85vh;
+} */
+
+/* LANDMARK POSITIONS */
+#city {
+    position: absolute;
+    left: 140px;
+    top: 60px;
+}
+
+#sand {
+    position: absolute;
+    left: 60px;
+    top: 300px;
+}
+
+#elk {
+    position: absolute;
+    left: 60px;
+    top: 480px;
+}
+
+#home {
+    position: absolute;
+    left: 140px;
+    top: 620px;
+}
+
+#car {
+    position: absolute;
+    transition: all 1s ease;
+}
+
+#city:hover, #sand:hover, #elk:hover, #home:hover {
+    cursor: pointer;
+}
+
+
+/* LOCATIONS CAR MOVES TO */
+.city {
+    left: 140px;
+    top: 60px;
+}
+
+.sand {
+    left: 60px;
+    top: 300px;
+}
+
+.elk {
+    left: 60px;
+    top: 480px;
+}
+
+.start {
+    position: absolute;
+    left: 150px;
+    top: 640px;
+}
+
+
+/* OVERLAY DISPLAYS */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+#images img {
+    border: 20px solid #FFFFFF;
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.close {
+    font-family: 'Tahoma';
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(36, 36, 36);
+    background-color: white;
+    border: none;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #950f0f;
+}
