@@ -36,16 +36,22 @@
     document.querySelector('#city').addEventListener('click', function(event) {
         event.preventDefault();
         img[0].className = 'showing'; //display city_img when city is clicked
+        img[1].className = 'hidden';
+        img[2].className = 'hidden';
     })
 
     document.querySelector('#sand').addEventListener('click', function(event) {
         event.preventDefault();
         img[1].className = 'showing'; //display sand_img when sand is clicked
+        img[0].className = 'hidden';
+        img[2].className = 'hidden';
     })
 
     document.querySelector('#elk').addEventListener('click', function(event) {
         event.preventDefault();
         img[2].className = 'showing'; //display elk_img when elk is clicked
+        img[0].className = 'hidden';
+        img[1].className = 'hidden';
     })
 
     document.querySelector('.close').addEventListener('click', function(event) { //close window when x is clicked
