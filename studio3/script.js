@@ -9,6 +9,8 @@
     const p1Egg = document.getElementById('p1_egg');
     const p2Egg = document.getElementById('p2_egg');
     const score = document.getElementById('score');
+    const score1 = document.getElementById('score1');
+    const score2 = document.getElementById('score2');
     const actionArea = document.getElementById('actions');
 
     const gameData = {
@@ -29,11 +31,10 @@
         console.log(gameData.index);
         gameControl.innerHTML = '<h2>The Game Has Started<h2>';
 
-        if (gameData.index === 0) {
-            p1Egg.innerHTML = `<img src="${gameData.playerEgg[gameData.index]}">`
-        } else if (gameData.index === 1) {
-            p2Egg.innerHTML = `<img src="${gameData.playerEgg[gameData.index]}">`
-        }
+        
+        p1Egg.innerHTML = `<img src="${gameData.playerEgg[0]}">`;
+        p2Egg.innerHTML = `<img src="${gameData.playerEgg[1]}">`;
+        
 
         gameControl.innerHTML += '<button id="quit"> Wanna Quit?</button>'
         document.getElementById('quit').addEventListener('click', function() {
@@ -47,9 +48,11 @@
         if (gameData.index === 0) {
             // p1Egg.innerHTML += `<img src="${gameData.playerEgg[gameData.index]}">`
             game1.innerHTML = `<p>Find a meal for ${gameData.players[gameData.index]}</p>`;
+            game2.innerHTML = '';
         } else if (gameData.index === 1) {
             // p2Egg.innerHTML += `<img src="${gameData.playerEgg[gameData.index]}">`
             game2.innerHTML = `<p>Find a meal for ${gameData.players[gameData.index]}</p>`;
+            game1.innerHTML = '';
         }
         
         actionArea.innerHTML = '<button id="roll">Find Meal</button>';
@@ -75,7 +78,7 @@
         //if two 1s are rolled (roll sum = 2) -> SNAKE EYES
         if (gameData.rollSum === 2) {
             console.log('snake eyes');
-            gameGeneral.innerHTML += '<p>Oh snap! Snake eyes!</p>';
+            gameGeneral.innerHTML += "<p>Oh snap! You can't eat meat! No meal today :(</p>";
             gameData.score[gameData.index] = 0;
 
             //if gameData.index = 0 -> return false; gameData.index = 1 -> return true
@@ -133,7 +136,9 @@
     }
 
     function showCurrentScore() {
-            score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> / <strong>${gameData.players[1]} ${gameData.score[1]}</strong></p>`
+            score1.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}: ${gameData.score[0]}</strong></p>`
+            score2.innerHTML = `<p>The score is currently <strong>${gameData.players[1]}: ${gameData.score[1]}</strong></p>`
+
     }
 
 })();
