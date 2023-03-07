@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of PIG</title>
+    <!-- normalize -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- stylesheet -->
 	<link href="styles.css" rel="stylesheet">
+    <!-- Google Fonts: Frijole and Skranji -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&family=Skranji&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <h1>Hatch the Egg</h1>
     <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
@@ -16,10 +23,26 @@
         <h2>Start a Game</h2>
         <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
     </div>
-
-    <div id="game"></div>
-    <div id="actions"></div>
-    <div id="score"></div>
+    
+    
+    <main>
+        <div id="game1">
+            <div id="score1"></div>
+            <div id="p1_egg"></div>
+        </div>
+    
+        <div id="game_general"></div>
+        <div id="actions"></div>
+        
+        <div id="game2">
+            <div id="score2"></div>
+            <div id="p2_egg"></div>
+        </div>
+        
+        <div id="score"></div>
+    </main>
+    
+    
 
     <script src="script.js"></script>
     
