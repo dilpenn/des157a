@@ -46,13 +46,13 @@
 
     function setUpTurn() {
         if (gameData.index === 0) {
-            // p1Egg.innerHTML += `<img src="${gameData.playerEgg[gameData.index]}">`
-            game1.innerHTML = `<p>Find a meal for ${gameData.players[gameData.index]}</p>`;
-            game2.innerHTML = '';
+            game1.className = 'current_player'; //highlight player1 name
+            console.log('player 1');
+            game2.className = '';
         } else if (gameData.index === 1) {
-            // p2Egg.innerHTML += `<img src="${gameData.playerEgg[gameData.index]}">`
-            game2.innerHTML = `<p>Find a meal for ${gameData.players[gameData.index]}</p>`;
-            game1.innerHTML = '';
+            game2.className = 'current_player'; //highlight player2 name
+            console.log('player 2');
+            game1.className = '';
         }
         
         actionArea.innerHTML = '<button id="roll">Find Meal</button>';
@@ -136,8 +136,8 @@
     }
 
     function showCurrentScore() {
-            score1.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}: ${gameData.score[0]}</strong></p>`
-            score2.innerHTML = `<p>The score is currently <strong>${gameData.players[1]}: ${gameData.score[1]}</strong></p>`
+            score1.innerHTML = `<p><strong>${gameData.score[0]}</strong></p>` //display player1 score
+            score2.innerHTML = `<p><strong>${gameData.score[1]}</strong></p>`//display player2 score
 
     }
 

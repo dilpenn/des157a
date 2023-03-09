@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: 'Skranji', cursive;
     color: #333;
     padding: 50px;
     line-height: 1.5em;
@@ -38,4 +38,8 @@ div {
 
 #actions {
     background-color: silver;
+}
+
+.current_player {
+    text-shadow: 0 0 6px #6dfb8e, 0 0 8px #aded59;
 }
