@@ -1,0 +1,170 @@
+html {
+    background-image: url("images/background.png");
+    width: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+}
+
+main {
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 25px;
+    color: #281a81;
+    text-shadow: 2px 2px 8px #0000009c;
+}
+
+#img_sleep {
+    position: absolute;
+    /* width: 50%; */
+    top: 190px;
+}
+
+/* ZZZ PLACEMENT AND ANIMATION */
+#zzz {
+    position: relative;
+}
+
+#z2 {
+    animation: pulse 1.5s infinite ease-in-out;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+#z3 {
+    animation: pulse 1.5s infinite ease-in-out;
+    animation-delay: 0.25s;
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#output {
+    line-height: 1.85em;
+}
+
+#input, #output {
+    background-image: url(images/food-jar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    padding: 80px 30px;
+    width: 410px;
+    height: 596px;
+    font-size: 22px;
+    position: absolute;
+    right: 6%;
+    top: -35px;
+}
+
+
+/* FORM STYLING */
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 22px;
+    display: inline-block;
+    width: 215px;
+}
+
+input, select {
+    width: 150px;
+    font-size: 20px;
+    padding: 8px 16px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #281a81a0;
+    background-color: #ffffff8c;
+    transition: 0.5s;
+}
+
+input[type=text]:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #281a81a0;
+}
+
+select {
+    background-color: #ffffff8c;
+    transition: 0.5s;
+    border: 2px solid #281a81a0;
+}
+
+select:focus {
+    background-color: #FFFFFF;
+}
+
+input[type=button], input[type=submit] {
+    background-color: #281a81;
+    color: #FFFFFF;
+    border: 2px solid #281a81a0;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+
+#images {
+    position: relative;
+}
+
+#zzz_container {
+    position: absolute;
+    bottom: -250px;
+    left: 350px;
+}
+
+#bubble_container {
+    position: absolute;
+    bottom: -250px;
+    left: 320px;
+}
+
+#cat_activities {
+    position: absolute;
+}
+
+

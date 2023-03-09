@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- Google Fonts: Baloo 2 in 400, 500, 600, 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <title>A Cat's Dream</title>
+</head>
+
+<body>
+    
+    <div id="background"></div>
+    <div id="floor"></div>
+
+    <header>
+        <h1>A Cat's Dream</h1>
+    </header>
+    
+    <main>
+        <section id="images">
+            <img id="img_sleep" src="images/cat_sleep.png" alt="sleeping cat">
+            <section id="zzz_container">
+                <section id="zzz" class="showing">
+                    <img id="z1" src="images/Z.png" alt="z1">
+                    <img id="z2" src="images/Z.png" alt="z2">
+                    <img id="z3" src="images/Z.png" alt="z3">
+                </section>
+            </section>
+            <section id="bubble_container">
+                <img id="bubble" src="images/dream_cloud.png" alt="dream bubble" class="hidden">
+                <section id="cat_activities">
+                    <img id="partying" src="images/" alt="partying cat" class="hidden">
+                    <img id="modeling" src="images/cat_modeling.png" alt="modeling cat" class="hidden">
+                    <img id="exercising" src="images/cat_exercising.png" alt="exercising cat" class="hidden">
+                </section>
+            </section>
+            
+            
+        </section>
+        
+        <form id="input" class="showing">
+            <div>
+                <label for="food">Food:</label>
+                <input type="text" id="food">
+            </div>
+            <div>
+                <label for="plNoun">Plural Noun:</label>
+                <input type="text" id="plNoun">
+            </div>
+            <div>
+                <label for="verbObj">Verb done on object:</label>
+                <input type="text" id="verbObj">
+            </div>
+            <div>
+                <label for="plNoun2">Another Plural Noun:</label>
+                <input type="text" id="plNoun2">
+            </div>
+            <div>
+                <label for="verbIng">Verb ending in -ing:</label>
+                <input type="text" id="verbIng">
+            </div>
+            <div>
+                <label for="adj">Adjective:</label>
+                <input type="text" id="adj">
+            </div>
+            <div>
+                <label for="noun">Noun:</label>
+                <input type="text" id="noun">
+            </div>
+            <div>
+                <label for="activity">Activity:</label>
+                <select id="activity">
+                    <option value="" selected>-</option> <!-- selected to make default option -->
+                    <option value="partying">partying</option>
+                    <option value="modeling">modeling</option>
+                    <option value="exercising">exercising</option>
+                </select>
+            </div>
+            <input type="submit" id="send-form" value="Create Dream">
+        </form>
+
+        <article id="output" class="hidden">
+            <!-- <input type="button" id="return-form" value="Dream Again"> -->
+        </article>
+    </main>
+</body>
+</html>
