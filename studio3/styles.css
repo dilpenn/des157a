@@ -16,8 +16,10 @@ h1 {
     text-align: center;
 }
 
+
 main {
     display: flex;
+    justify-content: center;
 }
 
 button { 
@@ -39,6 +41,15 @@ div {
 #actions {
     background-color: silver;
 }
+
+#score1, #score2 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
 
 .current_player {
     text-shadow: 0 0 6px #6dfb8e, 0 0 8px #aded59;

@@ -17,6 +17,7 @@
         dice: ['images/meat.png', 'images/fern-2.png', 'images/fern-3.png', 'images/fern-4.png', 'images/fern-5.png', 'images/fern-6.png'], 
         players: ['player 1', 'player 2'],
         playerEgg: ['images/p1_egg.png', 'images/p2_egg.png'],
+        winnerEgg: ['images/p1_hatched.png', 'images/p2_hatched.png'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -124,6 +125,14 @@
     function checkWinningCondition() {
         if(gameData.score[gameData.index] > gameData.gameEnd) { //if score is greater than game point
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+
+            // change egg to hatched img when player wins
+            if (gameData.score[0] > gameData.score[1]) { //if P1 wins
+                p1Egg.innerHTML = `<img src="${gameData.winnerEgg[0]}">`;
+            } else { //if P2 wins
+                p2Egg.innerHTML = `<img src="${gameData.winnerEgg[1]}">`;
+                console.log('p2 wins');
+            }
 
             actionArea.innerHTML = "";
             document.getElementById('quit').innerHTML = 'Start a New Game?';
