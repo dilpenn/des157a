@@ -1,7 +1,9 @@
 (function() {
     'use strict';
 
-    const startGame = document.getElementById('startgame');
+    const startOverlay = document.getElementById('startoverlay');  //starting directions
+    const startGame = document.getElementById('startgame'); //start game button
+    const gameWindow = document.getElementById('game-window'); //game playing window
     const gameControl = document.getElementById('gamecontrol');
     const gameGeneral = document.getElementById('game_general'); //elements that pertain to both players
     const game1 = document.getElementById('game1'); //elements that only pertain to p1 (egg, score, label)
@@ -30,8 +32,9 @@
         //randomly set game index 
         gameData.index = Math.round(Math.random()); //random # between 0 & 1
         console.log(gameData.index);
-        gameControl.innerHTML = '<h2>The Game Has Started<h2>';
-
+        // gameControl.innerHTML = '<h2>The Game Has Started<h2>';
+        startOverlay.className = 'hidden';
+        gameWindow.className = 'showing';
         
         p1Egg.innerHTML = `<img src="${gameData.playerEgg[0]}">`;
         p2Egg.innerHTML = `<img src="${gameData.playerEgg[1]}">`;

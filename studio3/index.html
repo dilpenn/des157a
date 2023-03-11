@@ -16,34 +16,36 @@
 
 <body>
     <h1>Hatch the Egg</h1>
-    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
-    <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
-
-    <div id="gamecontrol">
-        <h2>Start a Game</h2>
-        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+    <div id="startoverlay" class="showing">
+        <p>There are two herbivorous dinos waiting to hatch! Each player gets a turn to find a meal. If the meal consist of plants, the amount is added to the player's points and they can continue finding food. If one of the meals is meat, the player loses their turn. If both of the meals are meat, the player loses all of their points. The first player to reach 30 points wins.</p> 
+        <p>Which player's egg will hatch first?</p>
+        <button id="startgame">Start the Game</button>
     </div>
     
-    
-    <main>
-        <div>
-            <div id="game1"><h2>Player 1</h2></div>
-            <div id="score1"></div>
-            <div id="p1_egg"></div>
-        </div>
-    
-        <div>
-            <div id="game_general"></div>
-            <div id="actions"></div>
-            <div id="score"></div>
-        </div>
+
+    <main id="game-window" class="hidden">
         
-        <div>
-            <div id="game2"><h2>Player 2</h2></div>
-            <div id="score2"></div>
-            <div id="p2_egg"></div>
-        </div>
+        <div id="gamecontrol"></div>
         
+        <div id="game-flex">
+            <div>
+                <div id="game1"><h2>Player 1</h2></div>
+                <div id="score1"></div>
+                <div id="p1_egg"></div>
+            </div>
+    
+            <div>
+                <div id="game_general"></div>
+                <div id="actions"></div>
+                <div id="score"></div>
+            </div>
+            
+            <div>
+                <div id="game2"><h2>Player 2</h2></div>
+                <div id="score2"></div>
+                <div id="p2_egg"></div>
+            </div>
+        </div>
         
     </main>
     
