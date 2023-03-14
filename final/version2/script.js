@@ -2,7 +2,7 @@
     'use strict';
     console.log('reading js');
 
-    window.alert("Hello! Welcome to a working version of my final Mad Libs project!\nI have 2 tasks for you:\n1.) Fill out a completed form.\n2.) Fill out an incomplete form.");
+    window.alert("Hello! Welcome to a working version of my final Mad Libs project!\nI have 3 tasks for you:\n1.) Fill out a completed form.\n2.) Fill out an incomplete form.\n3.) Test out all 3 activities (the last input in the form).");
 
 
     const myForm = document.querySelector('#input');
