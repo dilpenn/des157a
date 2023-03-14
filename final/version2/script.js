@@ -21,32 +21,32 @@
 
         //error messages
         let myText;
-        if(food == "") { 
-            myText = "Please provide a food";
-            console.log('no food')
-            document.querySelector('#food').focus();
-        } else if (plNoun == "") {  
-            myText = "Please provide a plural noun";
-            document.querySelector('#plNoun').focus();
-        } else if (verbObj == "") {  
-            myText = "Please provide a verb done on an object";
-            document.querySelector('#verbObj').focus();
-        } else if (plNoun2 == "") {  
-            myText = "Please provide a second plural noun";
-            document.querySelector('#plNoun2').focus();
-        } else if (verbIng == "") {  
-            myText = "Please provide a verb ending in -ing";
-            document.querySelector('#verbIng').focus();
-        } else if (adj == "") {  
-            myText = "Please provide an adjective";
-            document.querySelector('#adj').focus();
-        } else if (noun == "") {  
-            myText = "Please provide a noun";
-            document.querySelector('#noun').focus();
-        } else if (activity == "") {  
-            myText = "Please choose an activity";
-            document.querySelector('#activity').focus();
-        } else {
+        // if(food == "") { 
+        //     myText = "Please provide a food";
+        //     console.log('no food')
+        //     document.querySelector('#food').focus();
+        // } else if (plNoun == "") {  
+        //     myText = "Please provide a plural noun";
+        //     document.querySelector('#plNoun').focus();
+        // } else if (verbObj == "") {  
+        //     myText = "Please provide a verb done on an object";
+        //     document.querySelector('#verbObj').focus();
+        // } else if (plNoun2 == "") {  
+        //     myText = "Please provide a second plural noun";
+        //     document.querySelector('#plNoun2').focus();
+        // } else if (verbIng == "") {  
+        //     myText = "Please provide a verb ending in -ing";
+        //     document.querySelector('#verbIng').focus();
+        // } else if (adj == "") {  
+        //     myText = "Please provide an adjective";
+        //     document.querySelector('#adj').focus();
+        // } else if (noun == "") {  
+        //     myText = "Please provide a noun";
+        //     document.querySelector('#noun').focus();
+        // } else if (activity == "") {  
+        //     myText = "Please choose an activity";
+        //     document.querySelector('#activity').focus();
+        // } else {
 
             //insert image in dream bubble according to activity chosen
             if (activity == "partying") {
@@ -57,7 +57,7 @@
                 document.getElementById('exercising').className = 'showing'; //exercising img appears
             }
             myText = `Today is a great day! I started by having <b>${food}</b> for breakfast. Later, I rolled around in some dirty <b>${plNoun}</b>. Although I wanted to <b>${verbObj}</b> my human, I couldn't find them anywhere around the house. This means I can do anything I want! I had been eyeing the <b>${plNoun2}</b> in the living room, but wasn't allowed to touch them. After <b>${verbIng}</b> them, I played with my favorite <b>${adj} ${noun}</b>. I finished the day off by <b>${activity}</b> with my friends.`;
-        }
+        // }
 
         
         madLib.innerHTML = myText;
