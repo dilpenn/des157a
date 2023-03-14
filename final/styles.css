@@ -24,3 +24,8 @@ h2 {
     text-transform: lowercase;
 }
 
+#gifs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
