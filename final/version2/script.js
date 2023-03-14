@@ -2,6 +2,9 @@
     'use strict';
     console.log('reading js');
 
+    window.alert("Hello! Welcome to a working version of my final Mad Libs project!\nI have 2 tasks for you:\n1.) Fill out a completed form.\n2.) Fill out an incomplete form.");
+
+
     const myForm = document.querySelector('#input');
     const madLib = document.querySelector('#output');
 
