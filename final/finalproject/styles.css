@@ -1,0 +1,206 @@
+html {
+    background-image: url("images/background.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    position: relative;
+}
+
+h1 {
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Shantell Sans', cursive;
+    font-style: italic;
+    /* font-family: 'Staatliches', cursive; */
+    text-align: left;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 25px;
+    color: #281a81;
+    text-shadow: 
+        0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 700px;
+}
+
+#img_sleep {
+    position: absolute;
+    top: 110px;
+}
+
+/* ZZZ PLACEMENT AND ANIMATION */
+#zzz {
+    position: relative;
+}
+
+#z2 {
+    animation: pulse 1.5s infinite ease-in-out;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+#z3 {
+    animation: pulse 1.5s infinite ease-in-out;
+    animation-delay: 0.25s;
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#output {
+    line-height: 1.85em;
+}
+
+#input, #output {
+    background-image: url(images/food-jar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 95px 55px;
+    width: 410px;
+    height: 596px;
+    font-size: 22px;
+    position: absolute;
+    right: 3%;
+    top: 40px;
+}
+
+
+/* FORM STYLING */
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 22px;
+    display: inline-block;
+    width: 215px;
+}
+
+input, select {
+    width: 150px;
+    font-size: 20px;
+    padding: 8px 16px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #281a81a0;
+    background-color: #ffffff8c;
+    transition: 0.5s;
+}
+
+input[type=text]:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #281a81a0;
+}
+
+select {
+    background-color: #ffffff8c;
+    transition: 0.5s;
+    border: 2px solid #281a81a0;
+}
+
+select:focus {
+    background-color: #FFFFFF;
+}
+
+input[type=button], input[type=submit], #close {
+    background-color: #281a81;
+    color: #FFFFFF;
+    border: 2px solid #281a81a0;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+/* IMAGE POSITIONING */
+#images {
+    position: relative;
+}
+
+#zzz_container {
+    position: absolute;
+    bottom: -170px;
+    left: 350px;
+}
+
+#bubble_container {
+    position: absolute;
+    bottom: -170px;
+    left: 25%;
+}
+
+#cat_activities #modeling, #cat_activities #exercising {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+
+#cat_activities #partying {
+    position: absolute;
+    top: -15px;
+    left: 70px;
+}
+
+
+/* ANIMATIONS */
+#partying {
+    animation: beating 0.4s infinite;
+}
+
+@keyframes beating {
+    to {transform: scale(1.1);}
+}
+
+#party-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: partylights 1.2s infinite;
+}
+
+@keyframes partylights {
+    0% {background-color: rgba(220, 0, 106, 0.4);}
+    32% {background-color: rgba(220, 0, 106, 0.4);}
+    33% {background-color: rgba(4, 0, 194, 0.4);}
+    65% {background-color: rgba(4, 0, 194, 0.4);}
+    66% {background-color: rgba(0, 108, 4, 0.4);}
+    100% {background-color: rgba(0, 108, 4, 0.4);}
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- Google Fonts: Baloo 2 in 400, 500, 600, 700 + Fredoka One in 400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <title>A Cat's Dream</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Purrfect Dream</h1>
+    </header>
+    
+    <main>
+        <section id="images">
+            <img id="img_sleep" src="images/cat_sleep.png" alt="sleeping cat">
+            <section id="zzz_container">
+                <section id="zzz" class="showing">
+                    <img id="z1" src="images/Z.png" alt="z1">
+                    <img id="z2" src="images/Z.png" alt="z2">
+                    <img id="z3" src="images/Z.png" alt="z3">
+                </section>
+            </section>
+            <section id="bubble_container">
+                <img id="bubble" src="images/dream_cloud.png" alt="dream bubble" class="hidden">
+                <section id="cat_activities">
+                    <img id="partying" src="images/cat_partying.png" alt="partying cat" class="hidden">
+                    <img id="modeling" src="images/cat_modeling.png" alt="modeling cat" class="hidden">
+                    <img id="exercising" src="images/cat_exercising.png" alt="exercising cat" class="hidden">
+                </section>
+            </section>
+    </section>
+
+        
+
+        <form id="input" class="showing">
+            <div>
+                <label for="food">Food:</label>
+                <input type="text" id="food" required>
+            </div>
+            <div>
+                <label for="plNoun">Plural Noun:</label>
+                <input type="text" id="plNoun" required>
+            </div>
+            <div>
+                <label for="verbObj">Action done to someone:</label>
+                <input type="text" id="verbObj" required>
+            </div>
+            <div>
+                <label for="plNoun2">Another Plural Noun:</label>
+                <input type="text" id="plNoun2" required>
+            </div>
+            <div>
+                <label for="verbIng">Verb ending in -ing:</label>
+                <input type="text" id="verbIng" required>
+            </div>
+            <div>
+                <label for="adj">Adjective:</label>
+                <input type="text" id="adj" required>
+            </div>
+            <div>
+                <label for="noun">Noun:</label>
+                <input type="text" id="noun" required>
+            </div>
+            <div>
+                <label for="activity">Activity:</label>
+                <select id="activity" required>
+                    <option value="" selected>-</option> <!-- selected to make default option -->
+                    <option value="partying">partying</option>
+                    <option value="modeling">modeling</option>
+                    <option value="exercising">exercising</option>
+                </select>
+            </div>
+            <input type="submit" id="send-form" value="Create Dream">
+        </form>
+
+        <div id="party-bg" class="hidden"></div>    <!-- party background -->
+        
+        <div id="output" class="hidden">
+            <article id="madlib-text">
+            
+            </article>
+            <button id="close">Dream Again</button>
+        </div>
+    </main>
+</body>
+</html>
