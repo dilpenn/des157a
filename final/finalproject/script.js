@@ -26,6 +26,7 @@
             document.getElementById('party-bg').className = 'showing'; //party lights background appears
         } else if (activity == "modeling") {
             document.getElementById('modeling').className = 'showing'; //modeling img appears
+            document.getElementById('photoshoot-bg').className = 'showing'; //photoshoot lights background appears
         } else if (activity == "exercising") {
             document.getElementById('exercising').className = 'showing'; //exercising img appears
         }

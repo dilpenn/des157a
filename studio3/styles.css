@@ -1,12 +1,29 @@
+html {
+    /* max-height: 750px; */
+}
+
 body {
+    /* height: 750px; */
     font-family: 'Skranji', cursive;
     color: #333;
-    padding: 50px;
-    line-height: 1.5em;
-    background-image: linear-gradient(180deg, #FFFFFF 0%, #9FEEF4 100%), url(images/fern_bg.png);
-    background-position: left bottom;
+    /* padding: 50px; */
+    /* line-height: 1.5em; */
+    background: linear-gradient(180deg, #FFFFFF 0%, #9FEEF4 100%);
+    /* background-size: cover; */
+    height: 100vh;
+    position: relative;
+}
+
+#fern-bg {
+    padding: 0;
+    height: 459px;
+    width: 752px;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    background-image: url(images/fern_bg.png);
+    /* background-position: left bottom; */
     background-repeat: no-repeat;
-    min-height: 100vh; 
 }
 
 h1 {
@@ -14,11 +31,29 @@ h1 {
     font-size: 96px;
     font-weight: 400;
     text-align: center;
-    margin-top: 30px;
+    margin: 0;
+    padding-top: 2rem;
+    /* margin-top: 30px; */
+}
+
+#container {
+    display: flex;
+    justify-content: center;
 }
 
 #startoverlay {
-    border-color: #94B36D;
+    width: 70%;
+    padding: 30px;
+    background: linear-gradient(69.19deg, rgba(117, 149, 75, 0.21) 13.19%, rgba(169, 201, 102, 0.222) 87.8%);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid #94B36D;
+    border-radius: 15px;
+    font-size: 24px;
+    line-height: 1.5em; 
+}
+
+#startoverlay p {
+    margin-top: 0;
 }
 
 #game-flex {
@@ -28,10 +63,11 @@ h1 {
 
 button { 
     padding: 10px;
+    font-size: 36px;
 }
 
 div {
-    padding: 20px;
+    padding: 0;
 }
 
 #score1, #score2 {

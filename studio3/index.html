@@ -15,42 +15,45 @@
 </head>
 
 <body>
-    <h1>Hatch the Egg</h1>
-    <div id="startoverlay" class="showing">
-        <p>There are two herbivorous dinos waiting to hatch! Each player gets a turn to find a meal. If the meal consist of plants, the amount is added to the player's points and they can continue finding food. If one of the meals is meat, the player loses their turn. If both of the meals are meat, the player loses all of their points. The first player to reach 30 points wins.</p> 
-        <p>Which player's egg will hatch first?</p>
-        <button id="startgame">Start the Game</button>
-    </div>
-    
 
-    <main id="game-window" class="hidden">
-        
-        <div id="gamecontrol"></div>
-        
-        <div id="game-flex">
-            <div>
-                <div id="game1"><h2>Player 1</h2></div>
-                <div id="score1"></div>
-                <div id="p1_egg"></div>
-            </div>
+    <h1>Hatch the Egg</h1>
     
-            <div>
-                <div id="game_general"></div>
-                <div id="actions"></div>
-                <div id="score"></div>
-            </div>
-            
-            <div>
-                <div id="game2"><h2>Player 2</h2></div>
-                <div id="score2"></div>
-                <div id="p2_egg"></div>
-            </div>
+    <div id="fern-bg"></div>
+   
+    <div id="container">
+        <div id="startoverlay" class="showing">
+            <p>There are two herbivorous dinos waiting to hatch! Each player gets a turn to find a meal. If the meal consist of plants, the amount is added to the player's points and they can continue finding food. If one of the meals is meat, the player loses their turn. If both of the meals are meat, the player loses all of their points. The first player to reach 30 points wins.</p> 
+            <p>Which player's egg will hatch first?</p>
+            <button id="startgame">Start the Game</button>
         </div>
         
-    </main>
+        <main id="game-window" class="hidden">
+            
+            <div id="gamecontrol"></div>
+            
+            <div id="game-flex">
+                <div>
+                    <div id="game1"><h2>Player 1</h2></div>
+                    <div id="score1"></div>
+                    <div id="p1_egg"></div>
+                </div>
+        
+                <div>
+                    <div id="game_general"></div>
+                    <div id="actions"></div>
+                    <div id="score"></div>
+                </div>
+                
+                <div>
+                    <div id="game2"><h2>Player 2</h2></div>
+                    <div id="score2"></div>
+                    <div id="p2_egg"></div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
     
-    
-
     <script src="script.js"></script>
     
 </body>
